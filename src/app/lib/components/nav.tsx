@@ -18,7 +18,7 @@ export default function Nav() {
       </div>
 
       {/* Desktop Nav */}
-      <div className="hidden md:flex w-1/3 justify-center gap-8 font-medium text-xs group mix-blend-difference">
+      <div className="hidden md:flex w-1/3 justify-center gap-8 font-medium text-xs group">
         {navItems.map((item, index) => (
           <Link
             key={index}
