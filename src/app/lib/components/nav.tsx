@@ -9,7 +9,7 @@ export default function Nav() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <header className="fixed z-50 w-full flex items-center justify-between px-6 py-4 md:px-20 md:py-2 bg-transparent">
+    <header className="fixed z-50 w-full flex items-center justify-between px-6 py-4 md:px-20 md:py-2 max-md:border-b max-md:border-black/10 backdrop-blur-2xl" style={{backgroundColor: menuOpen ? "rgba(255, 255, 255, 1)" : "rgba(255, 255, 255, .6)"}}>
       {/* Logo */}
       <div className="w-1/3">
         <Link href="/">
