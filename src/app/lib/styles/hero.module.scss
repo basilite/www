@@ -59,3 +59,10 @@
     transform: translate(-100%, -100%);
   }
 }
+
+@media (max-width: 768px) {
+  .animateSpinSlowTop,
+  .animateSpinSlowBottom {
+    animation: none !important;
+  }
+}

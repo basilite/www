@@ -37,10 +37,10 @@ export default function Hero() {
           {/* Blur */}
           <div className="absolute top-0 left-0 w-full h-full -z-10">
             <div
-              className={`absolute md:w-80 md:h-80 bg-purple-400 opacity-60 blur-3xl rounded-full ${style.animateSpinSlowTop} top-0 left-0`}
+              className={`absolute w-40 h-40 md:w-80 md:h-80 bg-purple-400 opacity-60 blur-3xl rounded-full ${style.animateSpinSlowTop} top-0 left-0`}
             ></div>
             <div
-              className={`absolute md:w-64 md:h-64 bg-blue-400 opacity-60 blur-3xl rounded-full ${style.animateSpinSlowBottom} bottom-0 right-0`}
+              className={`absolute w-40 h-40 md:w-64 md:h-64 bg-blue-400 opacity-60 blur-3xl rounded-full ${style.animateSpinSlowBottom} bottom-0 right-0`}
             ></div>
           </div>
         </div>
