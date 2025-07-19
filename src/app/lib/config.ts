@@ -3,9 +3,9 @@ import { NavItem, SocialLink } from "./types/nav";
 
 export const siteConfig: SiteConfig = {
     version: '0.0.1',
-    title: 'Basilite Website',
+    title: 'Basilite',
     description:
-        'Comprehensive documentation for your project. Built with Svelte 5, MDSvex, Tailwind CSS, and shadcn/ui components.',
+        '',
     github: 'https://github.com/basilite/www',
     npm: '',
     quickLinks: [
