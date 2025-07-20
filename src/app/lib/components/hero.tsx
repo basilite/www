@@ -1,11 +1,12 @@
-"use client"
+"use client";
 
 import { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Badge from "./badge";
 import Button from "./button";
-import style from '../styles/hero.module.scss'
+import style from "../styles/hero.module.scss";
+import Image from "next/image";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -50,7 +51,7 @@ export default function Hero() {
   }, []);
 
   return (
-    <section className="text-center py-50 relative overflow-hidden">
+    <section className="text-center pt-50 pb-20 relative overflow-hidden">
       <Badge className="mb-6" title="New feature coming soon" href="new" />
       <h1 className="text-6xl font-medium">
         Your Home <br />
@@ -64,7 +65,7 @@ export default function Hero() {
         {/* Window */}
         <div
           ref={windowRef}
-          className="relative w-fit max-w-6xl bg-neutral-100/60 backdrop-blur-2xl rounded-2xl border border-neutral-200 p-4"
+          className="relative w-fit max-w-6xl bg-neutral-100/60 backdrop-blur-2xl rounded-2xl border border-neutral-200 p-4 scale-[80%]"
         >
           {/* Desktop Controls */}
           <div className="hidden md:flex gap-1 mb-4">
@@ -75,9 +76,13 @@ export default function Hero() {
 
           {/* Image */}
           <div className="rounded-xl overflow-hidden">
-            <img
-              src="https://www.uxdesigninstitute.com/blog/wp-content/uploads/2022/02/Screenshot-2022-02-21-at-14.56.04.png"
-              alt=""
+            <Image
+              src="/cover-test.png"
+              width={0}
+              height={0}
+              sizes="100vw"
+              style={{ width: "100%", height: "auto" }}
+              alt="Cover"
             />
           </div>
 
