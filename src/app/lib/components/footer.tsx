@@ -23,9 +23,9 @@ export default function Footer() {
           <React.Fragment key={index}>
             <Link
               href={item.href || "#"}
-              className="transition-opacity duration-200 opacity-50 hover:opacity-100"
+              className="transition-opacity duration-200 opacity-50 hover:opacity-100 md:lowercase"
             >
-              {item.title.toLowerCase()}
+              {item.title}
             </Link>
             {index < socialLinks.length - 1 && <span className="max-md:hidden text-black/30">/</span>}
           </React.Fragment>
