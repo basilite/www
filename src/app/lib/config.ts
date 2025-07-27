@@ -14,7 +14,7 @@ export const siteConfig: SiteConfig = {
   ],
   logo: "/logo.svg",
   logoDark: "/logo-white.svg",
-  favicon: "/logo.png",
+  favicon: "/logo-circle.png",
 };
 
 export let navItems: NavItem[] = [
