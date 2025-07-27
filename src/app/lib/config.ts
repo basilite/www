@@ -24,11 +24,7 @@ export let navItems: NavItem[] = [
   },
   {
     title: "Docs",
-    href: "https://docs.basilite.org",
-  },
-  {
-    title: "Feature",
-    href: "https://feature.basilite.org",
+    href: "https://docs-basilite.netlify.app/",
   },
   {
     title: "Vision",
