@@ -1,5 +1,5 @@
-import Hero from "./lib/components/hero";
-import ScrollFadeText from "./lib/components/scrollFadeText";
+import Hero from "../lib/components/hero";
+import ScrollFadeText from "../lib/components/scrollFadeText";
 
 export default function Home() {
   return (

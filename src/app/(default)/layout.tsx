@@ -1,7 +1,9 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
-import "./globals.css";
-import { siteConfig } from "./lib/config";
+import "../globals.css";
+import { siteConfig } from "../lib/config";
+import Nav from "../lib/components/nav";
+import Footer from "../lib/components/footer";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -18,20 +20,16 @@ export const metadata: Metadata = {
   description: siteConfig.description,
 };
 
-export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en">
       <head>
         <link rel="shortcut icon" href={siteConfig.favicon} />
       </head>
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+        <Nav />
         {children}
+        <Footer />
       </body>
     </html>
   );
