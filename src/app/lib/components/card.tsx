@@ -8,8 +8,8 @@ export default function Card({ data }: { data: LinksItems }) {
 
   return (
     <Container
-      {...(data.link && { href: data.link, target: "_blank" })}
-      className={`group flex-col relative max-lg:!w-full ${
+      {...(data.link && { href: data.link, target: data.target })}
+      className={`group flex-col relative w-full ${
         data.size.rows == 1 && "h-44"
       } max-lg:h-44 rounded-[22px] overflow-hidden flex justify-center items-center border-2 border-neutral-900/10 dark:border-neutral-100/10`}
       style={{

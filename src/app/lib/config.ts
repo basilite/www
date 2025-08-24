@@ -48,6 +48,7 @@ export const linksItems: LinksItems[] = [
   {
     image: "/links/feature-request.png",
     link: "https://basilite.featurebase.app/",
+    target: "_blank",
     size: {
       rows: 1,
       cols: 2,
@@ -56,14 +57,14 @@ export const linksItems: LinksItems[] = [
   {
     image: "/links/github-background.png",
     link: "https://github.com/basilite",
+    target: "_blank",
     size: {
       rows: 2,
       cols: 2,
     },
   },
   {
-    video:
-      "/links/showreel.mp4",
+    video: "/links/showreel.mp4",
     size: {
       rows: 1,
       cols: 2,
